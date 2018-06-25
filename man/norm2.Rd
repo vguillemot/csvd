@@ -18,4 +18,3 @@ Compute the l2 norm of a vector.
 \examples{
 norm2( c(0, 0, -0.5, 0.5) )
 }
-

@@ -8,7 +8,7 @@
 #' projl1(1:10, 21)
 #' @export
 projgroup <- function(v, g, a) {
-  if (normgroup(v) <= a) return(v)
+  if (normgroup(v, g) <= a) return(v)
   # vecnormg <- tapply(v, g, FUN = norm2)
   vnormg <- ave(v, g, FUN=norm2)
   vv <- ifelse(vnormg==0, 0, vv / vnormg)

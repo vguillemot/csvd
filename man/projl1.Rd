@@ -20,4 +20,3 @@ Compute the projection of a vector onto the l1 ball.
 \examples{
 projl1(1:10, 21)
 }
-

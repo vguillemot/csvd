@@ -18,4 +18,3 @@ Normalize a vector.
 \examples{
 normalize( c(0, 0, -0.5, 0.5) )
 }
-

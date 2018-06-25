@@ -22,4 +22,3 @@ matrix.
 \examples{
 projorth(1:10, normalize(rnorm(10)))
 }
-

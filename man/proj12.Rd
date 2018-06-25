@@ -22,4 +22,3 @@ and the l2 ball.
 \examples{
 proj12(1:10, 21)
 }
-

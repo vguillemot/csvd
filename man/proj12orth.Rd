@@ -28,4 +28,3 @@ the l2 ball and the space orthogonal to M.
 \examples{
 proj12orth(1:10, a=10, M=normalize(rnorm(10)))
 }
-

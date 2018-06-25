@@ -18,4 +18,3 @@ Compute the sum of squares.
 \examples{
 ssq(1:10)
 }
-

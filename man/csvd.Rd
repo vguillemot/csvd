@@ -2,10 +2,10 @@
 % Please edit documentation in R/csvd.R
 \name{csvd}
 \alias{csvd}
-\title{Constrained SVD of a matrix.}
+\title{Constrained SVD of a matrix (wrapper of c++ functions).}
 \usage{
-csvd(X, R = 2, au = rep(1.4, R), av = rep(1.4, R), itermax = 5000,
-  eps = 1e-16, init = "svd")
+csvd(X, R = 2, au = rep(1.4, R), av = rep(1.4, R), itermax.pi = 1000,
+  itermax.pocs = 1000, eps.pi = 1e-16, eps.pocs = 1e-16, init = "svd")
 }
 \arguments{
 \item{X}{A matrix;}
@@ -16,20 +16,19 @@ csvd(X, R = 2, au = rep(1.4, R), av = rep(1.4, R), itermax = 5000,
 
 \item{av}{The radiuses? (>0) of the l1 balls for each right vector}
 
+\item{init}{How to initialize the algorithm}
+
 \item{itermax}{The maximum number of iterations}
 
 \item{eps}{Precision}
-
-\item{init}{How to initialize the algorithm}
 }
 \value{
 Pseudo-singular vectors and values
 }
 \description{
-Constrained SVD of a matrix.
+Constrained SVD of a matrix (wrapper of c++ functions).
 }
 \examples{
 X <- matrix(rnorm(20), 5, 4)
 csvd(X)
 }
-
