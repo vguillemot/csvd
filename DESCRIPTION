@@ -1,7 +1,7 @@
 Package: csvd
 Title: Constrained Singular Value Decomposition
-Version: 0.2
-Author: Vincent Guillemot <v.guillemot-ihu@icm-institute.org>
+Version: 0.3
+Author: Vincent Guillemot <vincent.guillemot@pasteur.fr>, Hervé Abdi <herve@utdallas.edu>, Arnaud Gloaguen <arnaud.gloaguen@centralesupelec.fr>
 Maintainer: Vincent Guillemot <v.guillemot-ihu@icm-institute.org>
 Description: Generate constrained singular components and singular values from a given matrix.
 Depends: R (>= 3.3.0)
