@@ -4,8 +4,9 @@
 \alias{csvd}
 \title{Constrained SVD of a matrix (wrapper of c++ functions).}
 \usage{
-csvd(X, R = 2, au = rep(1.4, R), av = rep(1.4, R), itermax.pi = 1000,
-  itermax.pocs = 1000, eps.pi = 1e-16, eps.pocs = 1e-16, init = "svd")
+csvd(X, R = 2, au = rep(1.4, R), av = rep(1.4, R),
+  itermax.pi = 1000, itermax.pocs = 1000, eps.pi = 1e-16,
+  eps.pocs = 1e-16, init = "svd")
 }
 \arguments{
 \item{X}{A matrix;}

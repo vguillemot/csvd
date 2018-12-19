@@ -1,9 +1,11 @@
 #' Constrained SVD of a matrix (wrapper of c++ functions).
 #'
-#' @param X A matrix;
+#' @param X a (data) matrix;
 #' @param R the desired rank of the singular decomposition;
-#' @param au The radiuses? (>0) of the l1 balls for each left vector
-#' @param av The radiuses? (>0) of the l1 balls for each right vector
+#' @param au The radiuses (radii?) (>0) of the 
+#' $L_1$ ball for each left vector
+#' @param av The radiuses (radii)? 
+#' (>0) of the $L_1$ balls for each right vector
 #' @param itermax The maximum number of iterations
 #' @param eps Precision
 #' @param init How to initialize the algorithm
@@ -11,6 +13,7 @@
 #' @examples 
 #' X <- matrix(rnorm(20), 5, 4)
 #' csvd(X)
+#' @author Vincent Guillemot
 #' @export
 csvd <- function(X, R=2, au = rep(1.4, R), av = rep(1.4, R), 
                  itermax.pi=1000, itermax.pocs=1000,
