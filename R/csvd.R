@@ -2,9 +2,9 @@
 #'
 #' @param X a (data) matrix;
 #' @param R the desired rank of the singular decomposition;
-#' @param au The radiuses (radii?) (>0) of the
+#' @param au The radiuses (>0) of the
 #' $L_1$ ball for each left vector
-#' @param av The radiuses (radii)?
+#' @param av The radiuses
 #' (>0) of the $L_1$ balls for each right vector
 #' @param itermax.pi The maximum number of power iterations
 #' @param itermax.pocs The maximum number of projection iterations
