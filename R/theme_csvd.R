@@ -23,6 +23,7 @@
 #' when \code{mire = TRUE}.
 #' @author Vincent Guillemot
 #' @import ggplot2
+#' @importFrom grDevices adjustcolor
 #' @examples
 #'\dontrun{
 #' x = c(5, 8, 1, 70)

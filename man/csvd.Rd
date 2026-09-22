@@ -4,24 +4,38 @@
 \alias{csvd}
 \title{Constrained SVD of a matrix (wrapper of c++ functions).}
 \usage{
-csvd(X, R = 2, au = rep(1.4, R), av = rep(1.4, R),
-  itermax.pi = 1000, itermax.pocs = 1000, eps.pi = 1e-16,
-  eps.pocs = 1e-16, init = "svd")
+csvd(
+  X,
+  R = 2,
+  au = rep(1.4, R),
+  av = rep(1.4, R),
+  itermax.pi = 1000,
+  itermax.pocs = 1000,
+  eps.pi = 1e-16,
+  eps.pocs = 1e-16,
+  init = "svd"
+)
 }
 \arguments{
-\item{X}{A matrix;}
+\item{X}{a (data) matrix;}
 
 \item{R}{the desired rank of the singular decomposition;}
 
-\item{au}{The radiuses? (>0) of the l1 balls for each left vector}
+\item{au}{The radiuses (radii?) (>0) of the
+$L_1$ ball for each left vector}
 
-\item{av}{The radiuses? (>0) of the l1 balls for each right vector}
+\item{av}{The radiuses (radii)?
+(>0) of the $L_1$ balls for each right vector}
+
+\item{itermax.pi}{The maximum number of power iterations}
+
+\item{itermax.pocs}{The maximum number of projection iterations}
+
+\item{eps.pi}{The power iteration precision}
+
+\item{eps.pocs}{The projection precision}
 
 \item{init}{How to initialize the algorithm}
-
-\item{itermax}{The maximum number of iterations}
-
-\item{eps}{Precision}
 }
 \value{
 Pseudo-singular vectors and values
@@ -32,4 +46,7 @@ Constrained SVD of a matrix (wrapper of c++ functions).
 \examples{
 X <- matrix(rnorm(20), 5, 4)
 csvd(X)
+}
+\author{
+Vincent Guillemot
 }

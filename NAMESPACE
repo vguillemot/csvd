@@ -13,3 +13,9 @@ export(projorth)
 export(ssq)
 export(theme_csvd)
 import(ggplot2)
+importFrom(MASS,mvrnorm)
+importFrom(grDevices,adjustcolor)
+importFrom(stats,
+  ave,
+  runif
+)
